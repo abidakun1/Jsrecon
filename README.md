@@ -4,7 +4,7 @@
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](package.json)
 
-A local, offline static-analysis CLI (+ self-contained HTML dashboard) for JS
+A Node.js local, offline static-analysis CLI (+ self-contained HTML dashboard) for JS
 recon during **authorized** security testing — bug bounty, pentest, or your
 own app's CI.
 
@@ -135,10 +135,7 @@ that touch `lib/analyzers.js` should come with a test case showing the
 specific false positive/negative being fixed or the new detection working
 (that's the pattern the existing suite follows throughout).
 
-## Security
 
-Found a vulnerability in jsrecon itself (not a finding it produced about
-*your* target)? See [SECURITY.md](SECURITY.md) for how to report it.
 
 ## Legal / ethical use
 
