@@ -8,8 +8,6 @@ A Node.js local, offline static-analysis CLI (+ self-contained HTML dashboard) f
 recon during **authorized** security testing — bug bounty, pentest, or your
 own app's CI.
 
-![jsrecon demo: scanning a bundle and walking the dashboard](docs/demo.gif)
-
 
 Point it at a single file, a URL, a local directory, or crawl a domain. It
 reports:
@@ -30,11 +28,6 @@ reports:
   private key blocks, generic `key:`/`secret:`/`token:` assignments, and a
   Shannon-entropy fallback for anything that doesn't match a known prefix.
 
-Nothing here brute-forces, exploits, or evades anything — it's pattern
-matching over static text, meant to point you at things worth a manual look.
-
-*(Demo scan is a synthetic `app.bundle.js` built specifically to trigger one
-finding per category — not a real target.)*
 
 ## Why
 
@@ -96,16 +89,15 @@ severity, new-since-last-scan badges, cross-target/cross-workspace
 correlation notes, and in-place triage buttons) and serves it locally. No
 external requests, no analytics, nothing leaves your machine.
 
-<table>
-<tr>
-<td><img src="docs/screenshots/overview.png" alt="Overview tab — severity breakdown across every finding in a run"></td>
-<td><img src="docs/screenshots/postmessage.png" alt="PostMessage tab — dangerous-sink and origin-check findings with expandable code context"></td>
-</tr>
-<tr>
-<td><img src="docs/screenshots/recon-data.png" alt="Recon Data tab — extracted domains, emails, URLs, grouped and filterable by field"></td>
-<td><img src="docs/screenshots/secrets.png" alt="Secrets tab — a flagged AWS-shaped key with triage buttons"></td>
-</tr>
-</table>
+Nothing here brute-forces, exploits, or evades anything — it's pattern
+matching over static text, meant to point you at things worth a manual look.
+
+
+![jsrecon demo: scanning a bundle and walking the dashboard](docs/demo.gif)
+
+*(Demo scan is a synthetic `app.bundle.js` built specifically to trigger one
+finding per category — not a real target.)*
+
 
 ## Project layout
 
