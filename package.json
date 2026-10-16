@@ -1,0 +1,47 @@
+{
+  "name": "jsrecon",
+  "version": "1.0.0",
+  "description": "Local, offline static analysis CLI + dashboard for authorized JS recon: postMessage security issues, exposed source maps, recon data extraction, and likely secrets.",
+  "main": "lib/analyzers.js",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "security",
+    "appsec",
+    "static-analysis",
+    "bug-bounty",
+    "recon",
+    "postmessage",
+    "source-map",
+    "secrets-detection",
+    "cli"
+  ],
+  "author": "Sam (Uebercracker)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidakun1/jsrecon.git"
+  },
+  "homepage": "https://github.com/abidakun1/jsrecon#readme",
+  "bugs": {
+    "url": "https://github.com/abidakun1/jsrecon/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "glob": "^13.0.6"
+  },
+  "bin": {
+    "jsrecon": "./bin/jsrecon.js"
+  }
+}

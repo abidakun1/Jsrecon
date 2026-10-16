@@ -1,0 +1,16 @@
+node_modules/
+npm-debug.log*
+
+# Local scan workspaces / dashboards — never meant to be committed, and
+# very likely to contain real recon data/secrets from whatever you scanned.
+.jsrecon/
+dashboard.html
+*.dashboard.html
+
+# Scan output you might write with --out/--save-dir while testing locally.
+*.findings.json
+/scan-output/
+
+.DS_Store
+*.log
+.env
