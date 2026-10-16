@@ -1,4 +1,4 @@
-# jsrecon
+# Jsrecon
 
 [![tests](https://github.com/abidakun1/jsrecon/actions/workflows/test.yml/badge.svg)](https://github.com/abidakun1/jsrecon/actions/workflows/test.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -7,6 +7,9 @@
 A local, offline static-analysis CLI (+ self-contained HTML dashboard) for JS
 recon during **authorized** security testing — bug bounty, pentest, or your
 own app's CI.
+
+![jsrecon demo: scanning a bundle and walking the dashboard](docs/demo.gif)
+
 
 Point it at a single file, a URL, a local directory, or crawl a domain. It
 reports:
@@ -29,8 +32,6 @@ reports:
 
 Nothing here brute-forces, exploits, or evades anything — it's pattern
 matching over static text, meant to point you at things worth a manual look.
-
-![jsrecon demo: scanning a bundle and walking the dashboard](docs/demo.gif)
 
 *(Demo scan is a synthetic `app.bundle.js` built specifically to trigger one
 finding per category — not a real target.)*
