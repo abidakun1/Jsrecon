@@ -30,6 +30,11 @@ reports:
 Nothing here brute-forces, exploits, or evades anything — it's pattern
 matching over static text, meant to point you at things worth a manual look.
 
+![jsrecon demo: scanning a bundle and walking the dashboard](docs/demo.gif)
+
+*(Demo scan is a synthetic `app.bundle.js` built specifically to trigger one
+finding per category — not a real target.)*
+
 ## Why
 
 Most JS-recon tooling either ships as a browser extension, phones data home,
@@ -89,6 +94,17 @@ detail.
 severity, new-since-last-scan badges, cross-target/cross-workspace
 correlation notes, and in-place triage buttons) and serves it locally. No
 external requests, no analytics, nothing leaves your machine.
+
+<table>
+<tr>
+<td><img src="docs/screenshots/overview.png" alt="Overview tab — severity breakdown across every finding in a run"></td>
+<td><img src="docs/screenshots/postmessage.png" alt="PostMessage tab — dangerous-sink and origin-check findings with expandable code context"></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/recon-data.png" alt="Recon Data tab — extracted domains, emails, URLs, grouped and filterable by field"></td>
+<td><img src="docs/screenshots/secrets.png" alt="Secrets tab — a flagged AWS-shaped key with triage buttons"></td>
+</tr>
+</table>
 
 ## Project layout
 
